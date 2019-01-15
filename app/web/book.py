@@ -12,8 +12,6 @@ from fisher import app
 
 __author__ = "GaoZizhong"
 
-print("注册路由的APP的id为："+str(id(app)))
-
 
 @app.route("/book/search/<q>/<page>")
 def search(q, page):
