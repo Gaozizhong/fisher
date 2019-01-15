@@ -5,15 +5,15 @@
     @Desc  : 
 """
 from flask import jsonify
+from . import web
 
 from helper import is_isbn_or_key
 from yushu_book import YuShuBook
-from fisher import app
 
 __author__ = "GaoZizhong"
 
 
-@app.route("/book/search/<q>/<page>")
+@web.route("/book/search/<q>/<page>")
 def search(q, page):
     """
     :param q: 普通关键字 ISBN
