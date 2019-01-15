@@ -7,4 +7,4 @@
 
 __author__ = "GaoZizhong"
 
-DEBUG = True
+DEBUG = False
