@@ -4,7 +4,7 @@
     @Date  : 2019/1/15
     @Desc  : 
 """
-from httper import HTTP
+from app.libs.httper import HTTP
 from flask import current_app
 
 __author__ = "GaoZizhong"
