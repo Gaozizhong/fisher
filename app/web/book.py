@@ -35,14 +35,11 @@ def search():
         q = form.q.data.strip()
         page = form.page.data
         isbn_or_key = is_isbn_or_key(q)
-        if isbn_or_key:
+        if isbn_or_key == "isbn":
             result = YuShuBook.search_by_isbn(q)
         else:
-            result = YuShuBook.search_by_keyword(q)
+            result = YuShuBook.search_by_keyword(q, page)
         return jsonify(result)
     else:
-        return jsonify({"msg": "函数检验失败！"})
+        return jsonify(form.errors)
 
-
-def __validate():
-    pass
