@@ -10,6 +10,9 @@ flask = "*"
 requests = "*"
 book = "*"
 wtforms = "*"
+flask-sqlalchemy = "*"
+cymysql = "*"
+crypto = "*"
 
 [requires]
 python_version = "3.7"
