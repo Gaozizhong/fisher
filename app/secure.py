@@ -9,3 +9,4 @@ __author__ = "GaoZizhong"
 
 DEBUG = True
 SQLALCHEMY_DATABASE_URI = "mysql+cymysql://root:mylove0416++@188.131.235.158:3306/fisher"
+SQLALCHEMY_TRACK_MODIFICATIONS = False

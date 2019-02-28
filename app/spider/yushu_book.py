@@ -16,7 +16,7 @@ class YuShuBook:
 
     @classmethod
     def search_by_isbn(cls, isbn):
-        url = YuShuBook.isbn_url.format(isbn)
+        url = cls.isbn_url.format(isbn)
         # dict
         result = HTTP.get(url)
         return result
@@ -24,7 +24,8 @@ class YuShuBook:
     @classmethod
     def search_by_keyword(cls, keyword, page=1):
 
-        url = YuShuBook.keyword_url.format(keyword, current_app.config["PER_PAGE"], cls.calculate_start(page))
+        url = cls.keyword_url.format(keyword, current_app.config["PER_PAGE"],
+                                     cls.calculate_start(page))
         # dict
         result = HTTP.get(url)
         return result
