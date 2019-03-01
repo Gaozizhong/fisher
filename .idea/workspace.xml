@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21bd4e81-a29f-4ebc-87b7-5b7140de17a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/none_local.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test6.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/secure.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/secure.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/web/book.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/web/book.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fisher.py" beforeDir="false" afterPath="$PROJECT_DIR$/fisher.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,9 +19,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/fisher$test6.coverage" NAME="test6 Coverage Results" MODIFIED="1551426708171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/fisher$Flask.coverage" NAME="Flask Coverage Results" MODIFIED="1547532476557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fisher$test4.coverage" NAME="test4 Coverage Results" MODIFIED="1551424569044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/fisher$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1551407892007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/fisher$test.coverage" NAME="test Coverage Results" MODIFIED="1551351877692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/fisher$fisher.coverage" NAME="fisher Coverage Results" MODIFIED="1551334529667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fisher$test5.coverage" NAME="test5 Coverage Results" MODIFIED="1551425797722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/fisher$fisher.coverage" NAME="fisher Coverage Results" MODIFIED="1551428121706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="fisher" />
@@ -26,86 +35,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fisher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            <state relative-caret-position="300">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/secure.py">
+        <entry file="file://$PROJECT_DIR$/test/test6.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="5" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/spider/yushu_book.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="350">
+              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
               <folding>
-                <element signature="e#96#128#0" expanded="true" />
+                <element signature="e#96#112#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/book.py">
+        <entry file="file://$PROJECT_DIR$/app/libs/none_local.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-329">
-              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+            <state relative-caret-position="214">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/test.py">
+        <entry file="file://$PROJECT_DIR$/app/web/book.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.virtualenvs/fisher-PV5XbeUF/Lib/site-packages/flask/globals.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.virtualenvs/fisher-PV5XbeUF/Lib/site-packages/flask/ctx.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-625">
-              <caret line="248" column="6" selection-start-line="248" selection-start-column="6" selection-end-line="248" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="25" />
+            <state relative-caret-position="239">
+              <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
               <folding>
-                <element signature="e#94#117#0" expanded="true" />
+                <element signature="e#90#124#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/libs/httper.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -137,21 +101,27 @@
         <option value="$PROJECT_DIR$/yushu_book.py" />
         <option value="$PROJECT_DIR$/app/models/book.py" />
         <option value="$PROJECT_DIR$/app/libs/httper.py" />
-        <option value="$PROJECT_DIR$/app/web/book.py" />
         <option value="$PROJECT_DIR$/app/web/__init__.py" />
         <option value="$PROJECT_DIR$/app/spider/yushu_book.py" />
-        <option value="$PROJECT_DIR$/fisher.py" />
         <option value="$PROJECT_DIR$/Pipfile" />
         <option value="$PROJECT_DIR$/app/__init__.py" />
         <option value="$PROJECT_DIR$/app/secure.py" />
         <option value="$PROJECT_DIR$/test/test.py" />
+        <option value="$PROJECT_DIR$/test/test2.py" />
+        <option value="$PROJECT_DIR$/fisher.py" />
+        <option value="$PROJECT_DIR$/test/test3.py" />
+        <option value="$PROJECT_DIR$/test/test4.py" />
+        <option value="$PROJECT_DIR$/test/test5.py" />
+        <option value="$PROJECT_DIR$/test/test6.py" />
+        <option value="$PROJECT_DIR$/app/libs/none_local.py" />
+        <option value="$PROJECT_DIR$/app/web/book.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+    <option name="x" value="951" />
+    <option name="width" value="978" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -167,25 +137,18 @@
           <expand>
             <path>
               <item name="fisher" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="fisher" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fisher" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Pipenv (fisher) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="fisher" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fisher" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Pipenv (fisher) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fisher" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Pipenv (fisher) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="flask" type="462c0819:PsiDirectoryNode" />
+              <item name="fisher" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -199,7 +162,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -221,7 +184,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.fisher">
     <configuration name="fisher" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="fisher" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -244,7 +207,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="fisher" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -257,7 +220,73 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test4" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="fisher" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test5" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="fisher" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test5.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test6" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="fisher" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test6.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -300,13 +329,19 @@
     </configuration>
     <list>
       <item itemvalue="Flask server.Flask" />
+      <item itemvalue="Python.test2" />
+      <item itemvalue="Python.test4" />
+      <item itemvalue="Python.test5" />
+      <item itemvalue="Python.test6" />
       <item itemvalue="Python.fisher" />
-      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.fisher" />
+        <item itemvalue="Python.test6" />
+        <item itemvalue="Python.test5" />
+        <item itemvalue="Python.test4" />
+        <item itemvalue="Python.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -326,7 +361,9 @@
       <workItem from="1551318702768" duration="1137000" />
       <workItem from="1551319865746" duration="1398000" />
       <workItem from="1551321859730" duration="116000" />
-      <workItem from="1551321998523" duration="8965000" />
+      <workItem from="1551321998523" duration="10099000" />
+      <workItem from="1551405364631" duration="730000" />
+      <workItem from="1551406314205" duration="8441000" />
     </task>
     <task id="LOCAL-00001" summary="加入配置文件">
       <created>1547399308622</created>
@@ -405,11 +442,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551319842095</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="调试完成：花了一上午的时间解决问题，最后才发现问题很简单，改个文件名就好了。让后又遇到一个问题，才发现，mysql的密码打错了。。。">
+      <created>1551363303842</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1551363303843</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67379000" />
+    <option name="totallyTimeSpent" value="77684000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -421,16 +465,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="762" y="0" width="781" height="830" extended-state="0" />
+    <frame x="761" y="0" width="782" height="831" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49766356" weight="0.44674966" />
-      <window_info id="Structure" order="1" sideWeight="0.50233644" weight="0.44674966" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49766356" weight="0.4461326" />
+      <window_info id="Structure" order="1" sideWeight="0.50233644" weight="0.4461326" />
       <window_info id="Favorites" order="2" weight="0.32918397" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32808024" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49930844" weight="0.36819485" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.38681948" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49930844" visible="true" weight="0.3676681" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3390558" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295129" />
@@ -503,7 +547,8 @@
     <MESSAGE value="更改目录" />
     <MESSAGE value="链接数据库，还有点bug需要调整一下" />
     <MESSAGE value="链接数据库，还有点bug需要调整一下，正在解决问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="链接数据库，还有点bug需要调整一下，正在解决问题" />
+    <MESSAGE value="调试完成：花了一上午的时间解决问题，最后才发现问题很简单，改个文件名就好了。让后又遇到一个问题，才发现，mysql的密码打错了。。。" />
+    <option name="LAST_COMMIT_MESSAGE" value="调试完成：花了一上午的时间解决问题，最后才发现问题很简单，改个文件名就好了。让后又遇到一个问题，才发现，mysql的密码打错了。。。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -574,16 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/web/book.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#90#124#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/setting.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -605,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/libs/httper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pipfile.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2623" />
@@ -621,13 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="332" selection-start-line="332" selection-end-line="332" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/fisher-PV5XbeUF/Lib/site-packages/flask_sqlalchemy/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="962" selection-start-line="962" selection-end-line="962" />
         </state>
       </provider>
     </entry>
@@ -666,48 +687,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fisher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <element signature="e#94#117#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/secure.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/book.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-329">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/fisher-PV5XbeUF/Lib/site-packages/flask/wrappers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-617">
           <caret line="110" column="6" selection-start-line="110" selection-start-column="6" selection-end-line="110" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/fisher-PV5XbeUF/Lib/site-packages/werkzeug/local.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="291" column="8" selection-start-line="291" selection-start-column="8" selection-end-line="291" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -732,13 +715,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/spider/yushu_book.py">
+    <entry file="file://$PROJECT_DIR$/app/models/book.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#96#128#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-79">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -749,5 +729,133 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/fisher-PV5XbeUF/Lib/site-packages/flask_sqlalchemy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="903" selection-start-line="903" selection-end-line="903" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/secure.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/libs/httper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#94#117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/spider/yushu_book.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#96#128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="21" column="67" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/fisher-PV5XbeUF/Lib/site-packages/werkzeug/local.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="71" column="38" lean-forward="true" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="27" column="67" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="27" column="67" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="67" />
+          <folding>
+            <element signature="e#96#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+          <folding>
+            <element signature="e#96#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/libs/none_local.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fisher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/web/book.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+          <folding>
+            <element signature="e#90#124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="Copyright.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

@@ -16,6 +16,18 @@ from app.spider.yushu_book import YuShuBook
 __author__ = "GaoZizhong"
 
 
+@web.route("/test")
+def test1():
+    from flask import request
+    from app.libs.none_local import n
+    print(n.v)
+    n.v = 2
+    print("----------------------")
+    print(getattr(request, "v", None))
+    setattr(request, "v", 2)
+    print("----------------------")
+    return ""
+
 @web.route("/book/search")
 def search():
     """
