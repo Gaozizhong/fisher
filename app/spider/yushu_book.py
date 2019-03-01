@@ -19,6 +19,12 @@ class YuShuBook:
         url = cls.isbn_url.format(isbn)
         # dict
         result = HTTP.get(url)
+        # 向数据库中加入查询到的信息
+        # book = query_from_mysql(isbn)
+        # if book:
+        #     return
+        # else:
+        #     save(result)
         return result
 
     @classmethod

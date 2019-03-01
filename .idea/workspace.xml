@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21bd4e81-a29f-4ebc-87b7-5b7140de17a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/libs/none_local.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view_models/book.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/spider/yushu_book.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/spider/yushu_book.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/web/book.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/web/book.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fisher.py" beforeDir="false" afterPath="$PROJECT_DIR$/fisher.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +20,7 @@
     <SUITE FILE_PATH="coverage/fisher$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1551407892007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/fisher$test.coverage" NAME="test Coverage Results" MODIFIED="1551351877692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/fisher$test5.coverage" NAME="test5 Coverage Results" MODIFIED="1551425797722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/fisher$fisher.coverage" NAME="fisher Coverage Results" MODIFIED="1551428121706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fisher$fisher.coverage" NAME="fisher Coverage Results" MODIFIED="1551446858197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="fisher" />
@@ -42,33 +37,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test6.py">
+        <entry file="file://$PROJECT_DIR$/app/web/book.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+            <state relative-caret-position="472">
+              <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
               <folding>
-                <element signature="e#96#112#0" expanded="true" />
+                <element signature="e#90#124#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/libs/none_local.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/view_models/book.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+            <state relative-caret-position="263">
+              <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/web/book.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/spider/yushu_book.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+            <state relative-caret-position="500">
+              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
               <folding>
-                <element signature="e#90#124#0" expanded="true" />
+                <element signature="e#96#128#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,7 +97,6 @@
         <option value="$PROJECT_DIR$/app/models/book.py" />
         <option value="$PROJECT_DIR$/app/libs/httper.py" />
         <option value="$PROJECT_DIR$/app/web/__init__.py" />
-        <option value="$PROJECT_DIR$/app/spider/yushu_book.py" />
         <option value="$PROJECT_DIR$/Pipfile" />
         <option value="$PROJECT_DIR$/app/__init__.py" />
         <option value="$PROJECT_DIR$/app/secure.py" />
@@ -114,14 +108,16 @@
         <option value="$PROJECT_DIR$/test/test5.py" />
         <option value="$PROJECT_DIR$/test/test6.py" />
         <option value="$PROJECT_DIR$/app/libs/none_local.py" />
+        <option value="$PROJECT_DIR$/app/spider/yushu_book.py" />
         <option value="$PROJECT_DIR$/app/web/book.py" />
+        <option value="$PROJECT_DIR$/app/view_models/book.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="951" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -131,7 +127,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -144,16 +139,11 @@
               <item name="fisher" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="fisher" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fisher" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -363,7 +353,8 @@
       <workItem from="1551321859730" duration="116000" />
       <workItem from="1551321998523" duration="10099000" />
       <workItem from="1551405364631" duration="730000" />
-      <workItem from="1551406314205" duration="8441000" />
+      <workItem from="1551406314205" duration="9699000" />
+      <workItem from="1551436353666" duration="5319000" />
     </task>
     <task id="LOCAL-00001" summary="加入配置文件">
       <created>1547399308622</created>
@@ -449,11 +440,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551363303843</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="课程第六章学习完成！！！">
+      <created>1551431132321</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1551431132321</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77684000" />
+    <option name="totallyTimeSpent" value="84261000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -465,15 +463,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="761" y="0" width="782" height="831" extended-state="0" />
+    <frame x="762" y="0" width="781" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49766356" weight="0.4461326" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49766356" weight="0.44536653" />
       <window_info id="Structure" order="1" sideWeight="0.50233644" weight="0.4461326" />
       <window_info id="Favorites" order="2" weight="0.32918397" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32808024" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49930844" visible="true" weight="0.3676681" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49930844" visible="true" weight="0.36819485" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3390558" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -548,7 +546,8 @@
     <MESSAGE value="链接数据库，还有点bug需要调整一下" />
     <MESSAGE value="链接数据库，还有点bug需要调整一下，正在解决问题" />
     <MESSAGE value="调试完成：花了一上午的时间解决问题，最后才发现问题很简单，改个文件名就好了。让后又遇到一个问题，才发现，mysql的密码打错了。。。" />
-    <option name="LAST_COMMIT_MESSAGE" value="调试完成：花了一上午的时间解决问题，最后才发现问题很简单，改个文件名就好了。让后又遇到一个问题，才发现，mysql的密码打错了。。。" />
+    <MESSAGE value="课程第六章学习完成！！！" />
+    <option name="LAST_COMMIT_MESSAGE" value="课程第六章学习完成！！！" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -760,16 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/spider/yushu_book.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#96#128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="83">
@@ -808,6 +797,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/libs/none_local.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/test6.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -818,10 +814,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/libs/none_local.py">
+    <entry file="file://$PROJECT_DIR$/app/spider/yushu_book.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        <state relative-caret-position="500">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <element signature="e#96#128#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -834,11 +833,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/web/book.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        <state relative-caret-position="472">
+          <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
           <folding>
             <element signature="e#90#124#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view_models/book.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
         </state>
       </provider>
     </entry>

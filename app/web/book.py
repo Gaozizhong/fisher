@@ -7,6 +7,7 @@
 from flask import jsonify, request
 
 from app.forms.book import SearchForm
+from app.view_models.book import BookViewModel
 from . import web
 
 
@@ -16,17 +17,17 @@ from app.spider.yushu_book import YuShuBook
 __author__ = "GaoZizhong"
 
 
-@web.route("/test")
-def test1():
-    from flask import request
-    from app.libs.none_local import n
-    print(n.v)
-    n.v = 2
-    print("----------------------")
-    print(getattr(request, "v", None))
-    setattr(request, "v", 2)
-    print("----------------------")
-    return ""
+# @web.route("/test")
+# def test1():
+#     from flask import request
+#     from app.libs.none_local import n
+#     print(n.v)
+#     n.v = 2
+#     print("----------------------")
+#     print(getattr(request, "v", None))
+#     setattr(request, "v", 2)
+#     print("----------------------")
+#     return ""
 
 @web.route("/book/search")
 def search():
@@ -49,8 +50,10 @@ def search():
         isbn_or_key = is_isbn_or_key(q)
         if isbn_or_key == "isbn":
             result = YuShuBook.search_by_isbn(q)
+            result = BookViewModel.package_single(result, q)
         else:
             result = YuShuBook.search_by_keyword(q, page)
+            result = BookViewModel.package_collection(result, q)
         return jsonify(result)
     else:
         return jsonify(form.errors)
