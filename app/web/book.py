@@ -4,10 +4,12 @@
     @Date  : 2019/1/15
     @Desc  : 
 """
+import json
+
 from flask import jsonify, request
 
 from app.forms.book import SearchForm
-from app.view_models.book import BookViewModel
+from app.view_models.book import BookViewModel, BookCollection
 from . import web
 
 
@@ -43,18 +45,24 @@ def search():
     # page = request.args["page"]
     # # 正整数，也要有一个最大值限制
     form = SearchForm(request.args)
+    books = BookCollection()
+
     if form.validate():
         # a = request.args.to_dict() 把结果由不可变字典换成普通字典
         q = form.q.data.strip()
         page = form.page.data
         isbn_or_key = is_isbn_or_key(q)
+        yushu_book = YuShuBook()
+
         if isbn_or_key == "isbn":
-            result = YuShuBook.search_by_isbn(q)
-            result = BookViewModel.package_single(result, q)
+            yushu_book.search_by_isbn(q)
         else:
-            result = YuShuBook.search_by_keyword(q, page)
-            result = BookViewModel.package_collection(result, q)
-        return jsonify(result)
+            yushu_book.search_by_keyword(q, page)
+
+        # __dict
+        books.fill(yushu_book, q)
+        return json.dumps(books, default=lambda o: o.__dict__)
+        # return jsonify(books.__dict__)
     else:
         return jsonify(form.errors)
 
