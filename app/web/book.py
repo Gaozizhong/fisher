@@ -6,7 +6,7 @@
 """
 import json
 
-from flask import jsonify, request
+from flask import jsonify, request, render_template, flash
 
 from app.forms.book import SearchForm
 from app.view_models.book import BookViewModel, BookCollection
@@ -66,3 +66,13 @@ def search():
     else:
         return jsonify(form.errors)
 
+
+@web.route('/test')
+def test():
+    r = {
+        'name': '高子中',
+        'age': 22
+    }
+    flash("hello world")
+    # 模板
+    return render_template('test.html', data=r)

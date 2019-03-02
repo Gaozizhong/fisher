@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block content %}
+    {{ super() }}
+    {{ data['name'] }}
+    {{ data.age }}
+    {# jinja2 #}
+    {% if data.age < 18 %}
+        {{ data.name }}
+    {% elif data.age == 22 %}
+        {{ data.school | default('河工大')}}
+        {% set messages = get_flashed_messages() %}
+        {{ messages }}
+    {% else %}
+        {{ data.name }}
+        {{ data.age }}
+    {% endif %}
+{% endblock %}

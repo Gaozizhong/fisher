@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+{% block content %}
+    {#{% for foo in [1,2,3] %}
+        {{ foo }}
+        <div>111</div>
+    {% endfor %}#}
+
+    {% for key,value in data.items() %}
+        {{ key }}
+        {{ value }}
+    {% endfor %}
+
+{% endblock %}
