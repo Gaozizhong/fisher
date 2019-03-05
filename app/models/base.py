@@ -7,7 +7,7 @@
 from contextlib import contextmanager
 from datetime import datetime
 
-from flask_sqlalchemy import SQLAlchemy as _SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy as _SQLAlchemy, BaseQuery
 from sqlalchemy import SmallInteger, Column, Integer
 
 __author__ = "GaoZizhong"
@@ -22,10 +22,16 @@ class SQLAlchemy(_SQLAlchemy):
         except Exception as e:
             self.session.rollback()
             raise e
-    pass
 
 
-db = SQLAlchemy()
+class Query(BaseQuery):
+    def filter_by(self, **kwargs):
+        if 'status' not in kwargs.keys():
+            kwargs['status'] = 1
+        super(Query,self).filter_by(**kwargs)
+
+
+db = SQLAlchemy(query_class=Query)
 
 
 class Base(db.Model):
@@ -40,3 +46,10 @@ class Base(db.Model):
         for key,value in attrs_dict.items():
             if hasattr(self, key) and key != 'id':
                 setattr(self, key, value)
+
+    @property
+    def create_datetime(self):
+        if self.creat_time:
+            return datetime.fromtimestamp(self.creat_time)
+        else:
+            return None
