@@ -4,7 +4,10 @@
     @Date  : 2019/3/2
     @Desc  :
 """
+from flask import render_template
 
+from app.models.gift import Gift
+from app.view_models.book import BookViewModel
 from . import web
 
 __author__ = "GaoZizhong"
@@ -12,7 +15,9 @@ __author__ = "GaoZizhong"
 
 @web.route('/')
 def index():
-    return "Index"
+    recent_gifts = Gift.recent()
+    books = [BookViewModel(gift.book) for gift in recent_gifts]
+    return render_template('index.html', recent=books)
 
 
 @web.route('/personal')

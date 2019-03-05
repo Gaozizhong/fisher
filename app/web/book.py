@@ -70,23 +70,33 @@ def search():
 
 @web.route('/book/<isbn>/detail')
 def book_detail(isbn):
+    """
+            1. 当书籍既不在心愿清单也不在礼物清单时，显示礼物清单
+            2. 当书籍在心愿清单时，显示礼物清单
+            3. 当书籍在礼物清单时，显示心愿清单
+            4. 一本书要防止即在礼物清单，又在赠送清单，这种情况是不符合逻辑的
+
+            这个视图函数不可以直接用cache缓存，因为不同的用户看到的视图不一样
+            优化是一个逐步迭代的过程，建议在优化的初期，只缓存那些和用户无关的“公共数据"
+        """
     has_in_gifts = False
     has_in_wishes = False
-    # 取书籍的相关数据
+    # 获取书籍的相关数据
     book = YuShuBook()
     book.search_by_isbn(isbn)
-    book = BookViewModel(book.first)
 
     if current_user.is_authenticated:
+        # 如果未登录，current_user将是一个匿名用户对象
         if Gift.query.filter_by(uid=current_user.id,
                                 isbn=isbn, launched=False).first():
             has_in_gifts = True
         if Wish.query.filter_by(uid=current_user.id,
                                 isbn=isbn, launched=False).first():
             has_in_wishes = True
+    book = BookViewModel(book.first)
+
     trade_gifts = Gift.query.filter_by(isbn=isbn, launched=False).all()
     trade_wishes = Wish.query.filter_by(isbn=isbn, launched=False).all()
-
     trade_wishes_model = TradeInfo(trade_wishes)
     trade_gifts_model = TradeInfo(trade_gifts)
 
