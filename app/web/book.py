@@ -4,12 +4,12 @@
     @Date  : 2019/1/15
     @Desc  : 
 """
-import json
 
 from flask import jsonify, request, render_template, flash
 
 from app.forms.book import SearchForm
-from app.view_models.book import BookViewModel, BookCollection
+from app.spider import yushu_book
+from app.view_models.book import BookCollection, BookViewModel
 from . import web
 
 
@@ -58,21 +58,16 @@ def search():
             yushu_book.search_by_isbn(q)
         else:
             yushu_book.search_by_keyword(q, page)
-
-        # __dict
         books.fill(yushu_book, q)
-        return json.dumps(books, default=lambda o: o.__dict__)
-        # return jsonify(books.__dict__)
     else:
-        return jsonify(form.errors)
+        flash("搜索的关键字不符合要求，请重新输入关键字")
+    return render_template('search_result.html', books=books, form=form)
 
 
-@web.route('/test')
-def test():
-    r = {
-        'name': '高子中',
-        'age': 22
-    }
-    flash("hello world")
-    # 模板
-    return render_template('test.html', data=r)
+@web.route('/book/<isbn>/detail')
+def book_detail(isbn):
+    yushu_book = YuShuBook()
+    yushu_book.search_by_isbn(isbn)
+    book = BookViewModel(yushu_book.first)
+    return render_template('book_detail.html', book=book, wishes=[], gifts=[])
+
