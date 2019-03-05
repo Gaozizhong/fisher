@@ -8,6 +8,8 @@
 from flask import jsonify, request, render_template, flash
 
 from app.forms.book import SearchForm
+from app.models.gift import Gift
+from app.models.wish import Wish
 from app.spider import yushu_book
 from app.view_models.book import BookCollection, BookViewModel
 from . import web
@@ -66,8 +68,15 @@ def search():
 
 @web.route('/book/<isbn>/detail')
 def book_detail(isbn):
-    yushu_book = YuShuBook()
-    yushu_book.search_by_isbn(isbn)
-    book = BookViewModel(yushu_book.first)
+    has_in_gifts = False
+    has_in_wishes = False
+    # 取书籍的相关数据
+    book = YuShuBook()
+    book.search_by_isbn(isbn)
+    book = BookViewModel(book.first)
+
+    trade_gifts = Gift.query.filter_by(isbn=isbn, launched=False).all()
+    trade_wishes = Wish.query.filter_by(isbn=isbn, launched=False).all()
+
     return render_template('book_detail.html', book=book, wishes=[], gifts=[])
 
