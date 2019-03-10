@@ -4,11 +4,13 @@
     @Date  : 2019/3/2
     @Desc  :
 """
-from flask import current_app, flash, redirect, url_for
+from flask import current_app, flash, redirect, url_for, render_template
 from flask_login import login_required, current_user
 
 from app.models.base import db
 from app.models.wish import Wish
+from app.view_models.trade import MyTrades
+from app.view_models.wish import MyWishes
 from . import web
 
 __author__ = "GaoZizhong"
@@ -16,6 +18,12 @@ __author__ = "GaoZizhong"
 
 @web.route('/my/wish')
 def my_wish():
+    uid = current_user.id
+    wishes_of_mine = Wish.get_user_wishes(uid)
+    isbn_list = [wish.isbn for wish in wishes_of_mine]
+    gift_count_list = Wish.get_gift_counts(isbn_list)
+    view_model = MyTrades(wishes_of_mine, gift_count_list)
+    return render_template('my_wish.html', wishes=view_model.trades)
     pass
 
 

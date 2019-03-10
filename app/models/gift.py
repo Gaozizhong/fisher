@@ -11,7 +11,6 @@ from sqlalchemy import Column, Integer, Boolean, ForeignKey, String, desc, func
 from sqlalchemy.orm import relationship
 
 from app.models.base import Base, db
-from app.models.wish import Wish
 from app.spider.yushu_book import YuShuBook
 
 __author__ = "GaoZizhong"
@@ -34,7 +33,8 @@ class Gift(Base):
         return gifts
 
     @classmethod
-    def get_wish_count(cls, isbn_list):
+    def get_wish_counts(cls, isbn_list):
+        from app.models.wish import Wish
         # 根据传入的Isbn组，到Wish表中计算出某个礼物的数量
         count_list = db.session.query(func.count(Wish.id), Wish.isbn).filter(Wish.launched == False,
                                       Wish.isbn.in_(isbn_list),
