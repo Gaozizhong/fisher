@@ -42,7 +42,7 @@ class Gift(Base):
         count_list = db.session.query(func.count(Wish.id), Wish.isbn).filter(Wish.launched == False,
                                       Wish.isbn.in_(isbn_list),
                                       Wish.status == 1).group_by(Wish.isbn).all()
-        count_list = [{'count': w(0), 'isbn': w[1]}for w in count_list]
+        count_list = [{'count': w[0], 'isbn': w[1]}for w in count_list]
         return count_list
 
     @property

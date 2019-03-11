@@ -55,7 +55,6 @@ class User(UserMixin, Base):
 
         return True if floor(success_receive_count/2) <= floor(success_gifts_count) else False
 
-
     def check_password(self, raw):
         return check_password_hash(self._password, raw)
 
@@ -98,9 +97,8 @@ class User(UserMixin, Base):
             nickname=self.nickname,
             beans=self.beans,
             email=self.email,
-            send_receive = str(self.send_counter) + '/' + str(self.receive_counter)
+            send_receive=str(self.send_counter) + '/' + str(self.receive_counter)
         )
-        pass
 
 
 @login_manager.user_loader

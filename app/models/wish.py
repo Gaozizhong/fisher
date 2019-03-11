@@ -29,14 +29,15 @@ class Wish(Base):
         return wishes
 
     @classmethod
-    def get_gift_counts(cls, isbn_list):
+    def get_gifts_counts(cls, isbn_list):
         from app.models.gift import Gift
         # 根据传入的Isbn组，到Gift表中计算出某个礼物的数量
-        count_list = db.session.query(func.count(Gift.id), Wish.isbn).filter(
+        count_list = db.session.query(func.count(Gift.id), Gift.isbn).filter(
             Gift.launched == False,
             Gift.isbn.in_(isbn_list),
-            Gift.status == 1).group_by(Gift.isbn).all()
-        count_list = [{'count': g(0), 'isbn': g[1]} for g in count_list]
+            Gift.status == 1).group_by(
+            Gift.isbn).all()
+        count_list = [{'count': g[0], 'isbn': g[1]} for g in count_list]
         return count_list
 
     @property
