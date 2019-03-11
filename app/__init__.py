@@ -6,11 +6,13 @@
 """
 from flask import Flask
 from flask_login import LoginManager
+from flask_mail import Mail
 from app.models.base import db
 
 __author__ = "GaoZizhong"
 
 login_manager = LoginManager()
+mail = Mail()
 
 
 def creat_app():
@@ -23,7 +25,10 @@ def creat_app():
     login_manager.init_app(app)
     login_manager.login_view = 'web.login'
     login_manager.login_message = '请先登录或注册'
-    db.create_all(app=app)
+
+    mail.init_app(app)
+    with app.app_context():
+        db.create_all(app=app)
     return app
 
 
