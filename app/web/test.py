@@ -259,7 +259,26 @@ def book_comment(book_id):
     r = {
         "comment":
             [
-
+                {
+                    "content": "i hate6!",
+                    "nums": 1
+                },
+                {
+                    "content": "i hate6!",
+                    "nums": 1
+                },
+                {
+                    "content": "i hate6!22222222",
+                    "nums": 1
+                },
+                {
+                    "content": "i hate6!11111111111",
+                    "nums": 1
+                },
+                {
+                    "content": "i hate6 gjdgjsdkgjdkgjklsdg!",
+                    "nums": 1
+                }
             ],
         "book_id": 1
     }
@@ -274,4 +293,32 @@ def add_short_comment():
         "request": "POST  /book/add_short_comment"
     }
     return jsonify(r)
+
+
+@web.route("/book/hot_keyword", methods=['GET'])
+def get_hot_keyword():
+    r = {
+        "hot":
+            [
+                "Fluent Python",
+                "Python",
+                "小程序Java核心编程",
+                "慕课网7七月",
+                "微信小程序开发入门与实践",
+                "C++"
+            ]
+    }
+    return jsonify(r)
+
+
+@web.route("/book/add/short_comment", methods=['POST'])
+def add_short_comment():
+    r = {
+        "error_code": 0,
+        "msg": "ok",
+        "request": "POST  /book/add_short_comment"
+    }
+    return jsonify(r)
+
+
 
