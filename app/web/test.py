@@ -311,14 +311,146 @@ def get_hot_keyword():
     return jsonify(r)
 
 
-@web.route("/book/add/short_comment", methods=['POST'])
-def add_short_comment():
+@web.route("/book/search2", methods=['GET'])
+def search_book():
     r = {
-        "error_code": 0,
-        "msg": "ok",
-        "request": "POST  /book/add_short_comment"
+        "books": [
+            {
+                "author": [
+                    "Luciano Ramalho"
+                ],
+                "id": 10,
+                "image": "https://img3.doubanio.com/lpic/s27935775.jpg",
+                "isbn": "9781491946008",
+                "price": "USD 39.99",
+                "title": "Fluent Python"
+            },
+            {
+                "author": [
+                    "【英】大卫•加里夫",
+                    "David Gariff"
+                ],
+                "id": 9,
+                "image": "https://img3.doubanio.com/lpic/s27145681.jpg",
+                "isbn": "9787511719164",
+                "price": "98.00元",
+                "title": "艺术谱系"
+            },
+            {
+                "author": [
+                    "Luciano Ramalho"
+                ],
+                "id": 8,
+                "image": "https://img3.doubanio.com/lpic/s27935775.jpg",
+                "isbn": "9781491946008",
+                "price": "USD 39.99",
+                "title": "Fluent Python"
+            },
+            {
+                "author": [
+                    "【英】大卫•加里夫",
+                    "David Gariff"
+                ],
+                "id": 7,
+                "image": "https://img3.doubanio.com/lpic/s27145681.jpg",
+                "isbn": "9787511719164",
+                "price": "98.00元",
+                "title": "艺术谱系"
+            },
+            {
+                "author": [
+                    "Luciano Ramalho"
+                ],
+                "id": 6,
+                "image": "https://img3.doubanio.com/lpic/s27935775.jpg",
+                "isbn": "9781491946008",
+                "price": "USD 39.99",
+                "title": "Fluent Python"
+            },
+            {
+                "author": [
+                    "【英】大卫•加里夫",
+                    "David Gariff"
+                ],
+                "id": 5,
+                "image": "https://img3.doubanio.com/lpic/s27145681.jpg",
+                "isbn": "9787511719164",
+                "price": "98.00元",
+                "title": "艺术谱系"
+            },
+            {
+                "author": [
+                    "Luciano Ramalho"
+                ],
+                "id": 4,
+                "image": "https://img3.doubanio.com/lpic/s27935775.jpg",
+                "isbn": "9781491946008",
+                "price": "USD 39.99",
+                "title": "Fluent Python"
+            },
+            {
+                "author": [
+                    "【英】大卫•加里夫",
+                    "David Gariff"
+                ],
+                "id": 3,
+                "image": "https://img3.doubanio.com/lpic/s27145681.jpg",
+                "isbn": "9787511719164",
+                "price": "98.00元",
+                "title": "艺术谱系"
+            },
+            {
+                "author": [
+                    "Luciano Ramalho"
+                ],
+                "id": 2,
+                "image": "https://img3.doubanio.com/lpic/s27935775.jpg",
+                "isbn": "9781491946008",
+                "price": "USD 39.99",
+                "title": "Fluent Python"
+            },
+            {
+                "author": [
+                    "【英】大卫•加里夫",
+                    "David Gariff"
+                ],
+                "id": 1,
+                "image": "https://img3.doubanio.com/lpic/s27145681.jpg",
+                "isbn": "9787511719164",
+                "price": "98.00元",
+                "title": "艺术谱系"
+            },
+        ],
+        "count": 2,
+        "start": 0,
+        "total": 30
     }
     return jsonify(r)
 
 
-
+@web.route("/classic/favor", methods=['GET'])
+def classic_favor():
+    r = [
+            {
+                    "content": "人生不能像做菜，把所有的料准备好才下锅",
+                    "fav_nums": 1,
+                    "id": 1,
+                    "image": "http://bl.7yue.pro/images/movie.8.png",
+                    "pubdate": "2018-06-22",
+                    "title": "李安<<饮食男女>>",
+                    "type": 100
+            },
+            {
+                    "content": "你陪我步入蝉夏 越过城市喧嚣",
+                    "fav_nums": 0,
+                    "id": 3,
+                    "image": "http://bl.7yue.pro/images/music.1.png",
+                    "index": 1,
+                    "like_status": 0,
+                    "pubdate": "2018-06-22",
+                    "title": "纸短情长",
+                    "type": 200,
+                    "url": "http://music.163.com/song/media/outer/url?id=516076896.mp3"
+            }
+    ]
+    return jsonify(r)
